@@ -1,0 +1,1 @@
+<p class="date"><?php print $output; ?></p>

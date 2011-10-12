@@ -1,0 +1,1 @@
+<p class="lead"><?php print $output; ?></p>

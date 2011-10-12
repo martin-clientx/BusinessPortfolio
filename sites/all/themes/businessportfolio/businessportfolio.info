@@ -1,0 +1,27 @@
+; 
+name = Business Portfolio
+description = Multi-column theme.
+version = VERSION
+core = 6.x
+engine = phptemplate
+
+regions[left_menu] = Left Menu
+regions[left] = Left
+regions[content] = Content
+regions[testimonials] = Testimonials
+
+regions[footer_1] = Footer 1 Column
+regions[footer_2] = Footer 2 Column
+regions[footer_3] = Footer 3 Column
+regions[footer_4] = Footer 4 Column
+
+regions[home_header] = Home Header
+regions[home_slider_1] = Home Slider 1
+regions[home_slider_2] = Home Slider 2
+regions[home_slider_3] = Home Slider 3
+regions[home_slider_4] = Home Slider 4
+
+; 
+version = "6.14"
+datestamp = "1253130027"
+

@@ -1,0 +1,1 @@
+<?php print '<p>'.$fields['text']->content.'</p><p class="posted">'.$fields['created_time']->content.'</p><a class="follow" href="http://twitter.com/'.$fields['screen_name_1']->content.'">Follow us on Twitter</a>'; ?>

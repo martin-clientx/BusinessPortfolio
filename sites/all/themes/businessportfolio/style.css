@@ -1,0 +1,14 @@
+.center_left_top ul.menu {text-align: left; padding: 25px 0 0 0px; position:absolute;top:0;left:0; width:200px; list-style: url(none) none;}
+.center_left_top ul.menuhide {display: none; visibility: hidden;}
+.center_left_top ul.menu li { margin: 0 0 0 0; list-style: url(none) none; }
+
+.center_left_top li.expanded {text-align: left; padding: 15px 0 0px 10px; height: 30px; width:200px; list-style: url(none) none;}
+.center_left_top li.collapsed {text-align: left; padding: 15px 0 0px 10px; height: 30px; width:200px; list-style: url(none) none;}
+.center_left_top li.leaf {text-align: left; padding: 15px 0 0px 10px; height: 30px; width:200px; list-style: url(none) none;}
+
+.imagecache-Header_471x370_default {float:right; margin:40px 0 0 0;}
+.imagecache-Portfolio_98x98 {float:left;}
+.imagecache-Portfolio_610 {margin: 0 0 20px 0;}
+
+.comments .picture { background: #FFF; float: right; border: 1px solid #EEE; margin: 0 5px  10px; padding: 2px; }
+.comments .comment { border: 1px dotted #BBB; margin: 0 0 10px 0; padding: 10px;}

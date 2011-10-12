@@ -1,0 +1,1 @@
+<p><span class="fat"><?php print $output; ?></span> said:</p>
