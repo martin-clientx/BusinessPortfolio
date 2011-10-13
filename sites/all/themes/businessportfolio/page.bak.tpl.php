@@ -13,7 +13,7 @@
 <script src="<?php print base_path().path_to_theme();?>/js/jquery-easing.1.2.js" type='text/javascript'></script>
 <script src="<?php print base_path().path_to_theme();?>/js/jquery-easing-compatibility.1.2.js" type='text/javascript'></script>
 <script src="<?php print base_path().path_to_theme();?>/js/coda-slider.1.1.1.js" type='text/javascript'></script>
-<!-- script src="<?php print base_path().path_to_theme();?>/js/init.js" type='text/javascript'></script -->	
+<script src="<?php print base_path().path_to_theme();?>/js/init.js" type='text/javascript'></script>	
 	<script type='text/javascript'>
 		$(function () {
 			$("#blogSlider").codaSlider();
@@ -25,6 +25,7 @@
 <![endif]-->
 </head> 
 <body>
+
 <div id="top_content">
     <div class="center" id="top_light1">
     	<h1><a href="<?php print $front_page ?>" title="<?php print $site_name ?>"><?php print $site_name ?></a></h1>
@@ -59,52 +60,32 @@
         </div>
 		<?php if ($user->uid > 0) { ?>
 			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
-		<?php } else { ?>
-			<p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a></p>
+		<?php } else { dsm('adsd');?>
+			<a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
 		<?php } ?>
      </div>
 </div>
-
-<?php if ($home_header) { print $home_header; } ?>
-
 <div id="main_content">
-	<div id="main_content_index">
-	    <div class="center1" id="top_light4">
-				<?php if ($home_slider_1 or $home_slider_2 or $home_slider_3 or $home_slider_4) { ?>
-		        <div id="blogSliderWrap">
-		            <div id="blogSlider">
-		                <div class="innerWrap">
-		                    <div class="panelContainer" >
-		                        
-		                        <div class="panel" title="Web design">
-		                            <div class="wrapper">
-										<?php if ($home_slider_1) { print $home_slider_1; } ?>
-		                            </div>
-		                        </div>
-		        
-		                        <div class="panel" title="Marketing">
-		                            <div class="wrapper">
-		                            	<?php if ($home_slider_2) { print $home_slider_2; } ?>
-		                            </div>
-		                        </div>
-		                    
-		                        <div class="panel" title="Consulting">
-		                            <div class="wrapper">
-		                            	<?php if ($home_slider_3) { print $home_slider_3; } ?>
-		                            </div>
-		                        </div>
-		                    
-		                        <!--<div class="panel" title="Support">
-		                            <div class="wrapper">
-		                            	<?//php if ($home_slider_4) { print $home_slider_4; } ?>
-		                            </div>
-		                        </div>
-                            -->
-		                    </div>
-		                </div>
-		            </div>
-				</div>
-		        <?php } ?>
+	<div class="center1 padding" id="top_light4">
+	
+   		<div class="center_box">
+   		
+   			<div class="center_left">
+				<?php print $left_menu ?>
+				<?php print $left ?>
+   			</div>
+   			
+   			<div class="center_right" id="content">
+				<?php print $breadcrumb ?>
+				<?php if ($show_messages) { print $messages; } ?>
+				<div class="tabs"><?php print $tabs ?></div>
+				<?php if ($title) { print '<h2>'.$title.'</h2>'; } ?>
+				<?php print $help ?>
+				<?php print $content; ?>
+				<?php print $feed_icons; ?>
+   			</div>
+   			
+   		</div>
 		<?php if ($show_messages) { ?>
 		<div id="testimonials">
 			<div id="testimonials_inner">
@@ -114,12 +95,8 @@
 			</div>
 		</div> 
 		<?php } ?>
-		    
-		    </div>
-	</div>
+    </div>
 </div>
-
-
 
 <div id="footer">
     <div class="center" id="top_light5">
@@ -147,3 +124,5 @@
 <?php print $closure ?>
 </body>
 </html>
+
+

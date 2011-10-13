@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 <head>
 <title><?php print $head_title ?></title>
-<?php print $head ?>
+<?php print $head?>
 <?php print $scripts ?>
 <?php print $styles ?>
 <link href="<?php print base_path().path_to_theme();?>/css/main.css" rel="stylesheet" type="text/css" media="screen" />
@@ -20,7 +20,7 @@
 		});
 	</script>
 <!--[if IE 6]>
- <script src="<?php print base_path().path_to_theme();?>/js/DD_belatedPNG_0.0.7a.js" type="text/javascript"></script>
+ <script src="<?php  print base_path().path_to_theme();?>/js/DD_belatedPNG_0.0.7a.js" type="text/javascript"></script>
  <script src="<?php print base_path().path_to_theme();?>/js/png_fix_elements.js" type="text/javascript"></script>
 <![endif]-->
 </head> 
@@ -60,9 +60,11 @@
         </div>
 		<?php if ($user->uid > 0) { ?>
 			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
-		<?php } else { ?>
+		<?php } elseif (substr(request_uri(), -8, 8)=='/?q=blog')  { ?>
 			<a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
-		<?php } ?>
+		<?php } else {?>
+      <p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a></p>
+    <?php } ?>
      </div>
 </div>
 <div id="main_content">

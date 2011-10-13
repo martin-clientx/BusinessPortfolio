@@ -60,7 +60,7 @@
 		<?php if ($user->uid > 0) { ?>
 			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
 		<?php } else { ?>
-			<p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a></p>
+			<a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
 		<?php } ?>
      </div>
 </div>
@@ -94,12 +94,11 @@
 		                            </div>
 		                        </div>
 		                    
-		                        <!--<div class="panel" title="Support">
+		                        <div class="panel" title="Support">
 		                            <div class="wrapper">
-		                            	<?//php if ($home_slider_4) { print $home_slider_4; } ?>
+		                            	<?php if ($home_slider_4) { print $home_slider_4; } ?>
 		                            </div>
 		                        </div>
-                            -->
 		                    </div>
 		                </div>
 		            </div>
