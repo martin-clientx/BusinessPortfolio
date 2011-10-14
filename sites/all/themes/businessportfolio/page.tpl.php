@@ -60,9 +60,9 @@
         </div>
 		<?php if ($user->uid > 0) { ?>
 			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
-		<?php } elseif (substr(request_uri(), -8, 8)=='/?q=blog')  { ?>
-			<a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
-		<?php } else {?>
+		<?php } /* elseif (substr(request_uri(), -8, 8)=='/?q=blog'){ ?>
+      <a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
+		<?php  } */ else {?>
       <p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a></p>
     <?php } ?>
      </div>
@@ -93,7 +93,7 @@
 			<div id="testimonials_inner">
 				<?php print $testimonials ?>
 				<?php //<a class="logo" href="#">Awesomeness</a><p class="sig"><span>said</span> <strong>John Doe</strong> <span>of</span></p> ?>
-				<a class="all" href="testimonials">SEE WHAT OTHERS ARE SAYING</a>
+				<a class="all" href="/testimonials">SEE WHAT OTHERS ARE SAYING</a>
 			</div>
 		</div> 
 		<?php } ?>

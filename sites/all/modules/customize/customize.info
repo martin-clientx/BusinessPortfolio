@@ -1,0 +1,6 @@
+; $Id;
+name = Site customization.
+description = This module will be used to furfill our needs.
+core = 6.x
+package = Customize
+files = cusomize.module
