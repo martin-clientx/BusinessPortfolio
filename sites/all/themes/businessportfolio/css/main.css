@@ -111,7 +111,8 @@ h1 a {float:left; margin:20px 0 15px 0; display:block; width:350px; height:46px;
 ul.listing {float:left; padding:12px 80px 28px 10px; margin:0;}
 ul.listing li {list-style-image: none; background-image:url(i/ico_li.png); background-repeat: no-repeat; background-position: left center; padding:0 0 2px 25px; margin:0 0 5px 0; font-size:1.2em;}
 
-.signup { float:right; width:87px; height:30px; display:block; margin:10px 0 0 0; background:transparent url(i/button_signup.png) no-repeat; text-indent:-9999px; overflow:hidden;}
+.newblog { float:left; width:100px; height:30px; display:block; margin:5px 0 0 0; background:transparent url(i/button_addblog.png) no-repeat; text-indent:-9999px; overflow:hidden;}
+.newtestimonial { float:left; width:158px; height:30px; display:block; margin:5px 10px 0px 0; background:transparent url(i/button_addtestimonial.png) no-repeat; text-indent:-9999px; overflow:hidden;}
 .login {float:right; margin:15px 10px 0 0;}
 
 #testimonials {margin:0 auto; width:958px; background:#f2f2f2; border:1px solid #e0e0df;}

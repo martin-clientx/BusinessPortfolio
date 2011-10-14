@@ -59,7 +59,24 @@
 		<?php if (isset($primary_links)) { ?><?php print phptemplate_primarylinks($primary_links, array('id' => 'nav')) ?><?php } ?>
         </div>
 		<?php if ($user->uid > 0) { ?>
-			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
+			<p class="login">
+        <?php
+        //echo (substr(request_uri(), -16, 16));
+        if (($user->uid == 1) || ($user->uid == 7) & (substr(request_uri(), -16, 16)=='/?q=testimonials')){
+        if (substr(request_uri(), -8, 8)=='/?q=blog'){ ?>
+          <a class="newblog" href="<?php print url('node/add/blog');?>">Create a new block entry</a>
+          <a class="newtestimonial" href="?q=node/add/testimonials">Create a new testimonial entry</a>
+
+          <?php
+        }?>
+        
+
+      <?php } ?>
+
+
+
+
+        <strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a> </p>
 		<?php } /* elseif (substr(request_uri(), -8, 8)=='/?q=blog'){ ?>
       <a class="signup" href="<?php print url('user/register');?>">Sign up</a><p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a> <span class="gray">or</span></p>
 		<?php  } */ else {?>
@@ -93,7 +110,7 @@
 			<div id="testimonials_inner">
 				<?php print $testimonials ?>
 				<?php //<a class="logo" href="#">Awesomeness</a><p class="sig"><span>said</span> <strong>John Doe</strong> <span>of</span></p> ?>
-				<a class="all" href="/testimonials">SEE WHAT OTHERS ARE SAYING</a>
+				<a class="all" href="testimonials">SEE WHAT OTHERS ARE SAYING</a>
 			</div>
 		</div> 
 		<?php } ?>
