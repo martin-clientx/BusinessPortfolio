@@ -109,7 +109,7 @@
 			<div id="testimonials_inner">
 				<?php print $testimonials ?>
 				<?php //<a class="logo" href="#">Awesomeness</a><p class="sig"><span>said</span> <strong>John Doe</strong> <span>of</span></p> ?>
-				<a class="all" href="testimonials">SEE WHAT OTHERS ARE SAYING</a>
+				<a class="all" href="<?php print url('testimonials');?>">SEE WHAT OTHERS ARE SAYING</a>
 			</div>
 		</div> 
 		<?php } ?>
