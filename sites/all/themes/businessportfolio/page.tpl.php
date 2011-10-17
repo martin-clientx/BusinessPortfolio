@@ -61,18 +61,17 @@
 		<?php if ($user->uid > 0) { ?>
 			<p class="login">
         <?php
-        //echo (substr(request_uri(), -16, 16));
-        if (($user->uid == 1) || ($user->uid == 7) & (substr(request_uri(), -16, 16)=='/?q=testimonials')){
-        if (substr(request_uri(), -8, 8)=='/?q=blog'){ ?>
+        /*
+         * Check if user = admin || owner and if page = testimonials || blog
+         */
+        if (($user->uid == 1) || ($user->uid == 7) & (substr(request_uri(), -16, 16)=='/?q=testimonials') || (substr(request_uri(), -8, 8)=='/?q=blog')){
+        ?>
           <a class="newblog" href="<?php print url('node/add/blog');?>">Create a new block entry</a>
-          <a class="newtestimonial" href="?q=node/add/testimonials">Create a new testimonial entry</a>
-
-          <?php
-        }?>
+          <a class="newtestimonial" href="<?php print url('node/add/testimonials');?>">Create a new testimonial entry</a>
+        <?php } ?>
         
 
-      <?php } ?>
-
+     
 
 
 
