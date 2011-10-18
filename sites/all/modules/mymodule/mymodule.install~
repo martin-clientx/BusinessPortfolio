@@ -1,0 +1,34 @@
+<?php
+function mymodule_schema(){
+  $schema['mymodule'] = array(
+    'description' => 'Echoes messages to different pages',
+    'fields' => array(
+      'page' => array(
+        'description' => 'To wich page?',
+        'type' => 'varchar',
+        'length' => '64',
+        'not null' => TRUE,
+      ),
+      'message' => array(
+        'description' => 'What message to be shown?',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+      ),
+    ),
+    'indexes' => array(
+      'page' => array('page', 'message'),
+    ),
+  );
+  return $schema;
+}
+
+
+
+
+       
+      function mymodule_uninstall(){
+    drupal_uninstall_schema('mymodule');
+        }
+
+      

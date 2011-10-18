@@ -1,4 +1,4 @@
 <?php
-function customize_menu_alter(&$items){
-dsm('asdasd');
+function mymodul_menu_alter($items){
+  
 }

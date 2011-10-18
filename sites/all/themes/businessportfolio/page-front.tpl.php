@@ -59,9 +59,9 @@
         </div>
 		<?php if ($user->uid > 0) { ?>
 			<p class="login"><strong class="gray">[<?php print $user->name;?>]</strong> | <a class="fat" href="<?php print url('user/'.$user->uid);?>">Account</a> | <a class="fat" href="<?php print url('logout');?>">Log out</a></p>
-		<?php } else { ?>
-			<p class="login"><a class="fat" href="<?php print url('user');?>">Log in</a></p>
-		<?php } ?>
+		<?php } //else { ?>
+		<!--	<p class="login"><a class="fat" href="<?php// print url('user');?>"><!--Log in-</a></p> -->
+		<?php// } ?>
      </div>
 </div>
 

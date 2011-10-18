@@ -1,0 +1,14 @@
+<?php
+ function mymodule_menu($items)
+ {
+   dsm ($items);
+   $items = array();
+   $items['node/add/blog'] = array(
+     'title' => 'Item',
+     'description' => 'Describing',
+     'page callback' => 'mymodule_menu',
+     'access callback' => TRUE,
+   );
+   return $items;
+ }
+

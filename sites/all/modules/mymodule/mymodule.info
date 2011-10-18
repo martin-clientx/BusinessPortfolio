@@ -1,0 +1,5 @@
+;$Id$
+name = My Module
+description = This is a module that echoes messages in different pages.
+core = 6.x
+file[] = mymodule.module
