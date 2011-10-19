@@ -54,7 +54,7 @@ p {font-size: 1.2em; padding:0; line-height:1.4em;}
 h1,h2,h3,h4,h5,h6 {font-weight:normal; margin: 10px 0 10px 0;}
 
 h1 {font-size: 3.1em;}
-h2 {font-size: 2.9em;}
+h2 {font-size: 0.1em;}
 h3 {font-size: 2.2em;}
 h4 {font-size: 2em;}
 h5 {font-size: 1.8em;}
@@ -64,7 +64,7 @@ h6 {font-size: 1.6em;}
 
 /* CONTENT */
 
-#top_content {background:#dddddd url(i/bg_top.jpg) top center repeat-x; height:81px;}
+#top_content {background:#dddddd url(i/bg_top.jpg) top center repeat-x; height:90px;}
 
 #nav_content {background:#e4e4e3; height:52px;}
 
@@ -96,7 +96,7 @@ h6 {font-size: 1.6em;}
 #top_light4 {background:transparent url(i/bg_cont_overlay.png) top center no-repeat; }
 #top_light5 {background:transparent url(i/bg_footer_overlay.png) top center no-repeat; }
 
-h1 a {float:left; margin:14px 0 15px 0; display:block; width:106px; height:52px; background: transparent url(../images/logo.png) no-repeat; text-indent:-9999px; overflow:hidden;}
+h1 a {float:left; margin:14px 0 15px 0; display:block; width:124px; height:61px; background: transparent url(../images/logo.png) no-repeat; text-indent:-9999px; overflow:hidden;}
 
 .left_column {width:469px; float:left; padding:55px 0 25px 0;}
 .right_column {width:470px; float:left; padding:50px 0 0 0;}
@@ -120,7 +120,8 @@ ul.listing li {list-style-image: none; background-image:url(i/ico_li.png); backg
 #testimonials {margin:0 auto; width:958px; background:#f2f2f2; border:1px solid #e0e0df;}
 #testimonials_inner {margin:10px; padding:20px; width:898px; background:#f8f7f7; border:1px solid #ececec;}
 #testimonials_inner p.intro { color:#d05606; font-weight:bold; font-size:1.4em;}
-#testimonials_inner h4 { padding:20px 0; font-family:"Times New Roman", Times, serif; font-size:2.6em; color:#666; font-weight:normal; font-style:italic; line-height:1.4em;}
+#testimonials_inner pre.intro { padding:0px 0; font-family:"Times New Roman", Times, serif; font-size:1.8em; color:#666; font-weight:normal; font-style:italic; line-height:1.4em; white-space: pre-wrap;}
+#testimonials_inner h4 { padding:20px 0; font-family:"Times New Roman", Times, serif; font-size:2.0em; color:#666; font-weight:normal; font-style:italic; line-height:1.4em;}
 #testimonials_inner a.all { display:block; width:192px; background:#f2f2f2; border:1px solid #e0e0e0; color:#6c6c6c; font-size:1.2em; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 #testimonials_inner a.all:hover { display:block; width:192px; background:#fff; border:1px solid #e0e0e0; color:#6c6c6c; font-size:1.2em; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 #testimonials_inner p.sig { float:right; padding:0 20px 0 0;}
@@ -131,7 +132,7 @@ ul.listing li {list-style-image: none; background-image:url(i/ico_li.png); backg
 #testimonialsl{margin: 10px 0px 10px 0px; width:660px; background:#f2f2f2; border:1px solid #e0e0df;}
 #testimonialsl_inner {margin:10px; padding:20px; width:600px; background:#f8f7f7; border:1px solid #ececec;}
 #testimonialsl_inner p.intro{ color:#d05606; font-weight:bold; font-size:1.4em;}
-#testimonialsl_inner h4{ padding:10px 0; font-family:"Times New Roman", Times, serif; font-size:1.6em; color:#666; font-weight:normal; font-style:italic; line-height:1.4em;}
+#testimonialsl_inner pre.intro { padding:0px 0; font-family:"Times New Roman", Times, serif; font-size:1.4em; color:#666; font-weight:normal; font-style:italic; line-height:1.4em; white-space:pre-wrap;}
 #testimonialsl_inner a.all { display:block; width:192px; background:#f2f2f2; border:1px solid #e0e0e0; color:#6c6c6c; font-size:1.2em; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 #testimonialsl_inner a.all:hover { display:block; width:192px; background:#fff; border:1px solid #e0e0e0; color:#6c6c6c; font-size:1.2em; padding:5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 #testimonialsl_inner p.sig{ float:right; padding:0 20px 0 0;}
@@ -150,7 +151,7 @@ ul.listing li {list-style-image: none; background-image:url(i/ico_li.png); backg
 .column_odd { width:235px; padding:0; margin:30px 0; float:left; color:#f0f0f0;}
 .column_odd p {font-size:1.1em;}
 .column_odd h5 { font-size:1.4em; font-weight:bold; letter-spacing:-1px; text-transform:uppercase;}
-.column_odd #tweeter { width:181px; height:185px; padding:18px 20px 18px 20px; background: transparent url(i/bg_twitter.png) no-repeat; position:relative; font-size:1.4em; color:#333; font-family:"Times New Roman", Times, serif; font-style:italic;}
+.column_odd #tweeter { width:181px; height:253px; padding:18px 20px 18px 20px; background: transparent url(i/bg_twitter.png) no-repeat; position:relative; font-size:1.1em; color:#333; font-family:"Arial"; font-style:normal;}
 .column_odd #tweeter a.from { font-weight:bold;}
 .column_odd #tweeter a.follow { position:absolute; bottom:60px; left:0; color:#fff; font-family:Arial, Helvetica, sans-serif; text-decoration:underline; font-size:0.8em; font-style:italic;}
 .column_odd #tweeter a.follow:hover { position:absolute; bottom:60px; left:0; color:#d05606; font-family:Arial, Helvetica, sans-serif; text-decoration:underline; font-size:0.8em; font-style:italic;}
@@ -296,7 +297,7 @@ text-transform:uppercase;
 .center_left_top ul li.arrow a {color: #fff;}
 .center_left_top ul li a {font-size: 1.4em; line-height: 15px; color: #515450;}
 
-.center_left ul.listing {fl oat:left; padding: 30px 0px 0px 20px; margin:0;}
+.center_left ul.listing {float:left; padding: 30px 0px 0px 20px; margin:0;}
 .center_left ul.listing li{list-style-image: none; background-image:url(i/ico_li.png); background-repeat: no-repeat; background-position: left center; padding:0 0 5px 30px; margin:0 0 5px 0; font-size:1.2em;}
 
 .center_right {float: left; width: 620px; padding: 20px 50px 0 70px;}

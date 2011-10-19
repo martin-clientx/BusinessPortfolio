@@ -1,1 +1,3 @@
-<?php print '<div id="testimonialsl"><div id="testimonialsl_inner"><p class="intro">'.$fields['title']->content.'</p><h4>“'.$fields['body']->raw.'”</h4></div></div>';?>
+<?php print '<div id="testimonialsl"><div id="testimonialsl_inner">'
+//<pre class="intro">'.$fields['title']->content
+.'<pre class="intro">'.$fields['body']->raw.'</pre></div></div>';?>
