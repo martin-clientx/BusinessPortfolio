@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*  CSS Document for Business Portfolio Theme */
+/*  CSS Document for Business Portfolio */
 /*
 ******************************************************************************************************
 
@@ -96,7 +96,7 @@ h6 {font-size: 1.6em;}
 #top_light4 {background:transparent url(i/bg_cont_overlay.png) top center no-repeat; }
 #top_light5 {background:transparent url(i/bg_footer_overlay.png) top center no-repeat; }
 
-h1 a {float:left; margin:14px 0 15px 0; display:block; width:124px; height:61px; background: transparent url(../images/logo.png) no-repeat; text-indent:-9999px; overflow:hidden;}
+h1 a {float:left; margin:12px 0 0 0; display:block; width:144px; height:70px; background: transparent url(../images/logo.png) no-repeat; text-indent:-9999px; overflow:hidden;}
 
 .left_column {width:469px; float:left; padding:55px 0 25px 0;}
 .right_column {width:470px; float:left; padding:50px 0 0 0;}
